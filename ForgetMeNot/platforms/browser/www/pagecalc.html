@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="boxed">
+<h1>Grade Calculator</h1>
+
+
+
+
+<form action="/action_page.php">
+  Tests: <input type="text" id="test"><br>
+  Percentage for Tests: <input type="text" id="testp"><br><br>
+  Homework: <input type="text" id="homework"><br>
+  Percentage for Homework: <input type="text" id="homeworkp"><br><br>
+  Quiz: <input type="text" id="quiz"><br>
+  Percentage for Quiz: <input type="text" id="quizp"><br><br>
+  Class Participation: <input type="text" id="classes"><br>
+  Percentage for Participation: <input type="text" id="classesp"><br><br>
+  Percentage for Final: <input type="text" id="finalp"><br><br>
+  Extra Credit: <input type="text" id="ec"><br><br>
+  Your Desires(grade): <input type="text" id="desire"><br>
+  <button onclick = "calculate()" type="button">Calculate!</button>
+</form>
+<script type="text/javascript">
+  function calculate(){
+  	var test,homework,quiz,classes,ec,final,testp,homeworkp,quizp,classesp,ecp,finalp,total,needed,done;
+ 	test = Number(document.getElementById('test').value);
+ 	homework = Number(document.getElementById('homework').value);
+ 	quiz = Number(document.getElementById('quiz').value);
+ 	classes = Number(document.getElementById('classes').value);
+ 	ec = Number(document.getElementById('ec').value);
+ 	testp = Number(document.getElementById('testp').value);
+ 	homeworkp = Number(document.getElementById('homeworkp').value);
+ 	quizp = Number(document.getElementById('quizp').value);
+ 	classesp = Number(document.getElementById('classesp').value);
+ 	finalp = Number(document.getElementById('finalp').value);
+ 	desire = Number(document.getElementById('desire').value);
+ 	per = testp+homeworkp+quizp+classesp+finalp
+ 	total = test*testp/per + homework*homeworkp/per + quiz*quizp/per + classes*classesp/per + ec;
+ 	needed = desire/100 - total;
+ 	done = needed/finalp*100;
+ 	if(testp+homeworkp+quizp+classesp+finalp > 100){
+ 		alert("The total percentages are above 100");
+ 	}else if(done <0){
+ 		alert("You already have above that grade!");
+ 	} else {
+    	alert("You need a: " + done + " on the final.");
+	}
+  }
+</script>
+
+
+</div>
+
+</body>
+
+</html>
