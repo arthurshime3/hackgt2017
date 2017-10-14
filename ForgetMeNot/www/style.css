@@ -1,0 +1,163 @@
+
+body {
+    background-image: url("background.jpg")
+
+}
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    opacity: .60
+}
+
+ul.topnav li {float: left;}
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 21px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+    
+}
+ul.topnav li a:hover {background-color: #555;}
+ul.topnav li.icon {display: none;}
+h1.titlePage {
+        color: #CAC6D8;
+	text-align:center;
+	opacity:.6;
+	font-size:80px;
+	  
+ 
+	
+
+}
+h1 {
+        color: #7D7B7B;
+	text-align:center;
+	opacity:1;
+	font-size:40px;
+	
+
+}
+
+p {
+        color: #514E4E;
+	text-indent:30px;
+	line-height: 40px;
+	opacity:1;
+	font-size:25px;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+h2 {
+        color: #514E4E;
+	
+	line-height: 40px;
+	opacity:1;
+	font-size:25px;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+
+.boxed { 
+	background:#BAB8B8;
+	opacity:.7;
+	margin:auto;
+	width:95%;
+	padding-bottom: 60px;
+	height:100%;
+	
+}
+.resumeBox { 
+	background:#BAB8B8;
+	opacity:.7;
+	margin:auto;
+	width:45%;
+	padding-bottom: 60px;
+	height:90%;
+}
+.boxed:hover { 
+	background:#BAB8B8;
+	opacity:.9;
+	margin:auto;
+	width:95%;
+	padding-bottom: 60px;
+	height:100%;
+	
+}
+.resumeBox:hover { 
+	background:#BAB8B8;
+	opacity:1;
+	margin:auto;
+	width:45%;
+	padding-bottom: 60px;
+	height:90%;
+	
+}
+img.math {
+	display:block;
+	margin: 0 auto;	
+	width: 45%;
+	
+}
+p.foot{
+ 	text-align: right;
+	color: #D5D5D5;
+	opacity:1;
+	font-size:16px;
+	line-height: 5px;
+	
+}
+div.foot{
+	position:fixed;
+	bottom:0;
+	
+	background:#545151;
+	opacity:.5;
+	margin:auto;
+	width:100%
+}
+ul {
+text-indent:60px;
+list-style-type:none;
+line-height: 40px;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+img.icon{
+
+	width:20%;
+	padding-left:40%;
+}
+img.me{
+	float:right;
+	width:20%;
+
+}
+img.sleep{
+	float:left;
+	width:30%;
+}
+form{
+padding-left:10%;
+text-align:right;
+margin-right:40%;
+
+}
+.mailform{
+
+text-align:left;
+font-size:16px;
+
+}
+.comment{
+width:70%;
+height:250px;
+}
